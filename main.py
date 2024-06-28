@@ -45,7 +45,7 @@ def train(sampler, net, device:str):
         total_loss /= len(dataloader.dataset)
         toc = time.time()
         torch.save(net.state_dict(), f"{output_dir}/{model_name}")
-        print(f'epoch {e}, avg loss {total_loss}, elapsed {(toc - tic):.2f}s')
+        print(f'epoch {e}, avg loss {total_loss}, time elapsed {(toc - tic):.2f}s')
 
 
 def generate_images(sampler, net, output_path:str, device:str, n_sample_per_side:int = 10):
