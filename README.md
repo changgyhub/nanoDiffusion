@@ -40,10 +40,10 @@ You can set `train_model = False` to skip the training process by loading the mo
 
 ![ddpm](assets/ddpm.png)
 
-### DDIM, 100 epoch training, 100 sample steps, 0 eta
+### DDIM, 100 epoch training, 1000 DDPM sample steps with 100 DDIM sample steps, 0 eta
 
 ![ddim](assets/ddim.png)
 
 ## Acknowledgements
 
-`SingleZombie/DL-Demos` provided some insights for me to implement the pipeline. Thanks Yifan!
+I started building the pipeline with examples in `SingleZombie/DL-Demos`. Thanks Yifan!
